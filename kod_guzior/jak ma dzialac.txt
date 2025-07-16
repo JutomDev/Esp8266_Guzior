@@ -1,0 +1,14 @@
+master
+-gdy przycisk to odsluchaj esp i zapisz (pytanie czy raz czyli klika razy dla pewnosci) JEST!
+-wyslij "on"-1 do wszystkich esp i po 2sekundach zgas "off"-2 JEST!
+-po nacisknieciu start wyslij "on"-1 do wszystkich esp, zapisz stan kazde esp jaki "led-on"-1, po nacisknieciu start zablokuj opcje wcisniecia drugi raz
+-gdy przyjdzie sygnal "off"-2 od jakiegos esp zapisz stan tego esp jako "led-off"-0
+
+-przycisk stop, wysyla do kazde esp "off"-2, odblokowuje opcje start JEST!
+
+
+slave
+-zwroc wiadomosc "hello"-0 odsluchu JEST!
+-wlącz diode na sygnal "on"-1 i wyslij "on"-1 do master JEST!
+ -wylacz diode na sygnal "off"-2 i wyslij "off"-2 do master JEST!
+ -wylacz diode na przycisk i wyslij do master "off"-2 JEST!
